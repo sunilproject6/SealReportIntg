@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "ShowReport";
+}
+
+<h2>ShowReport</h2>
+<nav class="navbar navbar-default list-inline ">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+
+         
+            <li> <button id="bid" value="Report" title=" Report">Report</button></li>
+
+
+
+        </ul>
+    </div>
+</nav>
+
+<script type="text/javascript">
+    var ReportUrl = @Html.Raw(@ViewBag.SealUrl);
+     var Report=@Html.Raw(@ViewBag.Report);
+</script>
+
+
+<iframe width="1000" height="1000" name="reportIframe" frameborder="0"></iframe>
+
+
+<script src="~/Scripts/custom/ShowReport.js"></script>
+
